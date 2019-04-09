@@ -1,6 +1,6 @@
 class ShoppingCart:
     # write your code here
-    def __init__(self, emp_discount=None):
+    def __init__(self, total=0,employee_discount=None,items = []):
       pass
     def add_item(self, name, price, quantity=1):
        pass
