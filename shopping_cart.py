@@ -7,6 +7,7 @@ class ShoppingCart:
     def add_item(self, name, price, quantity=1):
        self.items.append(name)
        self.total += quantity * price
+       self.prices = []
        self.prices.append(price)
        return self.total
     def mean_item_price(self):
