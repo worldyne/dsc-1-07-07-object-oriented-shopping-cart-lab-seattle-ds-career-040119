@@ -11,10 +11,16 @@ class ShoppingCart:
        self.prices.append(price)
        return self.total
     def mean_item_price(self):
-        return total / len(items)
+        return self.total / len(items)
 
     def median_item_price(self):
-        self.prices.median()
+        n = len(self.prices)
+        if n < 1:
+            return None
+        elif n % 2 == 1:
+            return sorted(self.prices)[n//2]
+        else:
+            return sum(sorted(self.prices)[n//2-1:n//2+1])/2.0
 
     def apply_discount(self):
         pass
