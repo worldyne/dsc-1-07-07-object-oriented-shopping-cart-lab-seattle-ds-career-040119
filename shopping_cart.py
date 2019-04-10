@@ -11,7 +11,7 @@ class ShoppingCart:
        self.prices.append(price)
        return self.total
     def mean_item_price(self):
-        return self.total / len(items)
+        return self.total / len(self.items)
 
     def median_item_price(self):
         n = len(self.prices)
